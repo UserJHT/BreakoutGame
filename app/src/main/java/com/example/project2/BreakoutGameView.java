@@ -300,5 +300,6 @@ public class BreakoutGameView extends View {
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         handler.removeCallbacks(gameLoop);
+        soundManager.release();
     }
 }
